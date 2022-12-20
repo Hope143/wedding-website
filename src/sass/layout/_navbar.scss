@@ -1,0 +1,44 @@
+@use "../abstract/" as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent !important;
+}
+
+.navbarContainer {
+  width: 100%;
+}
+
+.navbarContainer .navbar-nav a {
+  padding: 30px 16px !important;
+}
+
+.navbar-brand {
+  color: $text-color;
+}
+
+.navbar-nav a {
+  color: $text-color;
+  font-weight: 500;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.menuBar {
+  color: $text-color;
+  font-size: 30px;
+
+  border: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navbarContainer .navbar-nav a {
+  padding: 10px 0px !important;
+}
+}

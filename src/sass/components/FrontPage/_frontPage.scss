@@ -1,0 +1,60 @@
+@use "../../abstract/" as *;
+
+:root {
+  --bg-color-primary: rgba(94, 41, 19, 0.3);
+  --bg-color-secondary: rgba(94, 41, 19, 0.3);
+}
+
+.frontPage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  height: 100vh;
+  width: 100%;
+}
+
+video {
+  /** Simulationg background-size: cover */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.titlePage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.titleHeader {
+  font-size: 100px;
+  color: rgba(250, 245, 239, 1);
+}
+.andHeader {
+  font-size: 60px;
+  color: rgba(250, 245, 239, 1);
+}
+
+.landingFlower {
+  position: absolute;
+  width: 450px;
+  height: 350px;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg)
+    brightness(109%) contrast(101%);
+}
+
+.landingFlower2 {
+  position: absolute;
+  width: 450px;
+  height: 350px;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg)
+    brightness(109%) contrast(101%);
+}
