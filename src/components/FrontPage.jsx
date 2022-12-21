@@ -63,12 +63,12 @@ function FrontPage() {
       <div className="titlePage vh-100">
       <img
         className="landingFlower img-fluid"
-        src="../../public/images/landing-flower.png"
+        src="../../images/landing-flower.png"
         alt="flower"
       />
       <img
         className="landingFlower2 img-fluid"
-        src="../../public/images/motif2.png"
+        src="../../images/motif2.png"
         alt="flower"
       />
         <div className="text-Container">
