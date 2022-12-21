@@ -25,27 +25,42 @@ video {
 .titlePage {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 48%;
   transform: translate(-50%, -50%);
 }
+
+.text-Container {
+  position: relative;
+  top: 35%;
+  left: 0%;
+}
+
+.subTitlePage {
+  width: auto;
+  color: $text-color;
+  font-weight: 300;
+  transform: translate(-50%, -50%);
+}
+
 .titleHeader {
   font-size: 100px;
-  color: rgba(250, 245, 239, 1);
+  color: $primary;
 }
 .andHeader {
-  font-size: 60px;
-  color: rgba(250, 245, 239, 1);
+  font-size: 70px;
+  color: $primary;
 }
 
 .landingFlower {
   position: absolute;
-  width: 450px;
+  width: 350px;
   height: 350px;
-  left: 50%;
-  top: 35%;
+  left: 50%;    
+  top: 25%;
   transform: translate(-50%, -50%);
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg)
     brightness(109%) contrast(101%);
+    z-index: 2;
 }
 
 .landingFlower2 {
@@ -53,8 +68,46 @@ video {
   width: 450px;
   height: 350px;
   left: 50%;
-  top: 65%;
+  top:78%;
   transform: translate(-50%, -50%) rotate(180deg);
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg)
     brightness(109%) contrast(101%);
+}
+
+@media screen and (max-width: 992px) {
+
+.landingFlower {
+  top: 27%; 
+  width: 250px;
+  height: auto;
+}
+
+.landingFlower2 {
+  top: 70%;
+  width: 300px;
+  height: auto;
+}
+.titleHeader {
+  font-size: 70px;
+}
+
+  .navbar {
+  padding : 0px 0px !important; 
+}
+}
+
+@media screen and (max-width: 887px) {
+
+  .landingFlower2{
+    top: 80%;
+    width: 300px;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+  
 }

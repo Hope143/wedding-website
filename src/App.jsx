@@ -1,12 +1,14 @@
 import React from "react";
 import FrontPage from "./components/FrontPage";
-import { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <main className="">
-      <FrontPage />
-    </main>
+
+  <Routes>
+    <Route index element={<FrontPage/>}/>
+  </Routes>
+ 
   );
 }
 
