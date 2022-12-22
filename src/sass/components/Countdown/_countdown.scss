@@ -2,14 +2,85 @@
 
 .countdownContainer {
     height: 50vh;
+    background-color: rgb(255, 255, 255);
 }
+
+.countdownBg {
+    position: absolute !important;
+    top: 5% !important;
+    left: 10% !important;
+    width: 120px !important;
+    height: 50vh;
+    z-index: 1;
+}
+
+.countdownBg2 {
+    position: absolute !important;
+    top: 5% !important;
+    left: 80% !important;
+    width: 120px !important;
+    height: 50vh;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+
 
 .textHeader {
     color: $text-header;
+    z-index: 2;
 }
 
 .dividingPattern {
     filter: invert(51%) sepia(46%) saturate(519%) hue-rotate(1deg) brightness(97%) contrast(86%);    
-    z-index: 2;
+    z-index: 2; 
 }
 
+
+.countdownText{
+    font-size: 60px !important;
+    font-weight: 600 !important;
+    z-index: 2;
+}
+.day {
+    color: #8d6f34;
+}
+
+.hour {
+    color: #917235;
+}
+
+.minute {
+    color: #aa8640;
+}
+
+.second {
+    color: #c59d4c;
+}
+
+@media screen and (max-width: 992px) {
+    .countdownBg {
+        left: 7% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .countdownText {
+        font-size: 50px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .countdownContainer{
+        height: 40vh;
+    }
+    .countdownText {
+        font-size: 38px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dividingPattern {
+        width: 250px !important;
+    }
+}

@@ -89,7 +89,7 @@ function FrontPage() {
       />
         <div className="text-Container">
         <h1 className="titleHeader mb-3 d-lg-flex align-items-end d-none">
-          EM <span className="andHeader px-4">&</span> IMMAN
+          IMMAN <span className="andHeader px-4">&</span> EM
         </h1>
         <h1 className="titleHeader mb-3 d-flex text-center d-lg-none align-items-end">
         EM & IMMAN

@@ -68,7 +68,7 @@ video {
   width: 450px;
   height: 350px;
   left: 50%;
-  top:78%;
+  top:80%;
   transform: translate(-50%, -50%) rotate(180deg);
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg)
     brightness(109%) contrast(101%);
@@ -83,7 +83,7 @@ video {
 }
 
 .landingFlower2 {
-  top: 70%;
+  top: 75%;
   width: 300px;
   height: auto;
 }
@@ -108,6 +108,8 @@ video {
 
 }
 
-@media screen and (max-width: 576px) {
-  
+@media screen and (max-height: 562px) and (max-width: 886px) {
+  .landingFlower2 {
+    top: 90%;
+  }
 }
