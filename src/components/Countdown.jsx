@@ -27,7 +27,7 @@ const Countdown = () => {
 <div className="countdownTextContainer">
 <div>
 <h1 className='textHeader text-center mb-0'>Countdown</h1>
-      <img className='dividingPattern d-flex mx-auto mb-4' width={300}  src="/images/dividing-pattern-1.png" alt="photo" />
+      <img className='dividingPattern d-flex mx-auto mb-5 mb-sm-4' width={300}  src="/images/dividing-pattern-1.png" alt="photo" />
       <h1 className="countdownText text-center">
         <span className="day">{days}d </span>
         <span className="hour">{hours}hr </span>
