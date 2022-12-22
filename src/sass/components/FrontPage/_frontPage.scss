@@ -5,6 +5,13 @@
   --bg-color-secondary: rgba(94, 41, 19, 0.3);
 }
 
+.textCountdown {
+  font-size: 30px;
+  color: $secondary-text-color;
+  background-color: $bg-color;
+  border-radius: 10px;
+}
+
 .frontPage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   height: 100vh;
@@ -65,10 +72,10 @@ video {
 
 .landingFlower2 {
   position: absolute;
-  width: 450px;
+  width: 400px;
   height: 350px;
   left: 50%;
-  top:80%;
+  top:90%;
   transform: translate(-50%, -50%) rotate(180deg);
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg)
     brightness(109%) contrast(101%);
@@ -83,7 +90,7 @@ video {
 }
 
 .landingFlower2 {
-  top: 75%;
+  top: 90%;
   width: 300px;
   height: auto;
 }
@@ -99,17 +106,15 @@ video {
 @media screen and (max-width: 887px) {
 
   .landingFlower2{
-    top: 80%;
-    width: 300px;
+    top:95%;
+    width: 200px;
   } 
 }
 
-@media screen and (max-width: 768px) {
 
-}
-
-@media screen and (max-height: 562px) and (max-width: 886px) {
-  .landingFlower2 {
-    top: 90%;
-  }
-}
+// @media screen and (max-height: 562px) and (max-width: 886px) {
+//   .landingFlower2 {
+//     top: 90%;
+//     width: 200px;
+//   }
+// }

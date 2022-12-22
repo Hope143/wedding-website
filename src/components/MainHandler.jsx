@@ -1,13 +1,13 @@
 import React from 'react';
 import FrontPage from './FrontPage';
-import Countdown from './Countdown';
+import Gallery from './Gallery';
 import { Fragment } from 'react';
 
 function MainHandler() {
   return (
     <Fragment>
       <FrontPage />
-      <Countdown />
+      <Gallery />
     </Fragment>
   )
 }

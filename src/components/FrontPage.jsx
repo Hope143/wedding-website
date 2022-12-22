@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../sass/app.scss";
 import bgImage from '/images/flower-bg.mp4'
 import { useLocation } from "react-router-dom";
+import Countdown from "./Countdown";
 
 function FrontPage() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,7 +34,7 @@ function FrontPage() {
       <nav className={`navbar navbar-expand-md py-3 py-lg-0 p-lg-0 ${navbar ? 'NavbarParentScrolled' : 'NavbarParent'}`}>
         <div className="navbarContainer py-3  py-md-0 container d-flex justify-content-between">
           <div>
-            <a className="navbar-brand fst-italic" href="#">
+            <a className={`navbar-brand fst-italic ${navbar ? 'scrolledNavBrand' : ''}`} href="#">
               WEDDING DAY
             </a>
           </div>
@@ -47,7 +48,7 @@ function FrontPage() {
             }}
           >
             <i
-              className={`bx menuBar ${
+              className={`bx ${navbar ? 'scrolledMenuBar' : 'menuBar'} ${
                 openMenu ? " bx-menu-alt-right" : " bx-menu"
               }`}
             ></i>
@@ -57,16 +58,16 @@ function FrontPage() {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav">
-              <a className={`nav-link fs-6 ${currentLocation === '' ? 'activeLink' : ''}`} href="#">
+              <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '' ? 'activeLink' : ''}`} href="#">
                 HOME
               </a>
-              <a className={`nav-link fs-6 ${currentLocation === '#countdown' ? 'activeLink' : ''}`} fs-6 href="#countdown">
+              <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '#countdown' ? 'activeLink' : ''}`} fs-6 href="#countdown">
                 COUNTDOWN
               </a>
-              <a className={`nav-link fs-6 ${currentLocation === '#gallery' ? 'activeLink' : ''}`} href="#gallery">
+              <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '#gallery' ? 'activeLink' : ''}`} href="#gallery">
                 GALLERY
               </a>
-              <a className={`nav-link fs-6 ${currentLocation === '#location' ? 'activeLink' : ''}`} href="#location">
+              <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '#location' ? 'activeLink' : ''}`} href="#location">
                 LOCATION
               </a>
             </div>
@@ -98,7 +99,8 @@ function FrontPage() {
         <div className="d-block justify-content-center ">
         <h3 className="fst-italic fw-lighter text-center mb-3 text-light">Are getting married in</h3>
         <h4 className="fst-italic fw-light text-center text-light">December 30, 2022</h4>
-        
+        {/* CountdownHere */}
+          <Countdown/>
         </div>
         </div>
       </div>

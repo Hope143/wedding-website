@@ -46,25 +46,12 @@
 
 
 .countdownText{
-    font-size: 60px !important;
+    font-size: 30px !important;
     font-weight: 600 !important;
     z-index: 2;
-}
-.day {
-    color: #8d6f34;
+    color: #657b9e;
 }
 
-.hour {
-    color: #917235;
-}
-
-.minute {
-    color: #aa8640;
-}
-
-.second {
-    color: #c59d4c;
-}
 
 @media screen and (max-width: 992px) {
     .countdownBg {

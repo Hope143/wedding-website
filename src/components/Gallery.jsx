@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const targetTime = new Date("2022-12-30").getTime();
 
-const Countdown = () => {
+const Gallery = () => {
   const [currentTime, setCurrentTime] = useState(Date.now());
 
   const timeBetween = targetTime - currentTime;
@@ -21,16 +21,24 @@ const Countdown = () => {
   }, []);
 
   return (
-    <>
-        <p className="textCountdown text-center">
+    <div className="countdownContainer p-0 p-sm-4 position-relative">
+      <img className="countdownBg d-md-block d-none"  src="/images/countdownDesign.svg" alt="" />
+      <img className="countdownBg2 d-md-block d-none"  src="/images/countdownDesign.svg" alt="" />
+<div className="countdownTextContainer">
+<div>
+<h1 className='textHeader text-center mb-0'>Location</h1>
+      <img className='dividingPattern d-flex mx-auto mb-5 mb-sm-4' width={300}  src="/images/dividing-pattern-1.png" alt="photo" />
+      <h1 className="countdownText text-center">
         <span className="day">{days}d </span>
         <span className="hour">{hours}hr </span>
         <span className="minute">{minutes}m </span>
         <span className="second">{seconds}s</span>
-        </p>
-    </>
-
+        
+      </h1>
+</div>
+</div>
+    </div>
   );
 };
 
-export default Countdown;
+export default Gallery;
