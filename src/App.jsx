@@ -1,12 +1,12 @@
 import React from "react";
-import FrontPage from "./components/FrontPage";
+import MainHandler from "./components/MainHandler";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
 
   <Routes>
-    <Route index element={<FrontPage/>}/>
+    <Route index element={<MainHandler/>}/>
   </Routes>
  
   );

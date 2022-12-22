@@ -1,6 +1,6 @@
 @use "../abstract/" as *;
 
-.navbar {
+.NavbarParent {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,12 +9,21 @@
   z-index: 99;
 }
 
+.NavbarParentScrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $text-header !important;
+  z-index: 99;
+}
+
 .navbarContainer {
   width: 100%;
 }
 
 .navbarContainer .navbar-nav a {
-  margin: 25px 16px !important;
+  margin: 15px 16px !important;
   z-index: 99;  
 }
 

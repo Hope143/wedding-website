@@ -1,10 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../sass/app.scss";
-import bgImage from "../../public/images/flower-bg.mp4";
+import bgImage from '/images/flower-bg.mp4'
 import { useLocation } from "react-router-dom";
 
 function FrontPage() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >= 66) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+
+  useEffect(() => {
+    changeBackground()
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground)
+  })
 
   const currentLocation = useLocation().hash;
   console.log( currentLocation == '#countdown');
@@ -14,7 +30,7 @@ function FrontPage() {
       <video playsInline autoPlay muted loop className="back-video">
         <source src={bgImage} type="video/mp4" />
       </video>
-      <nav className="navbar navbar-expand-md py-3 py-lg-0 p-lg-0 ">
+      <nav className={`navbar navbar-expand-md py-3 py-lg-0 p-lg-0 ${navbar ? 'NavbarParentScrolled' : 'NavbarParent'}`}>
         <div className="navbarContainer py-3  py-md-0 container d-flex justify-content-between">
           <div>
             <a className="navbar-brand fst-italic" href="#">

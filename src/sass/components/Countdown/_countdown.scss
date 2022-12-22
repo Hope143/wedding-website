@@ -1,0 +1,15 @@
+@use '../../abstract/' as *;    
+
+.countdownContainer {
+    height: 50vh;
+}
+
+.textHeader {
+    color: $text-header;
+}
+
+.dividingPattern {
+    filter: invert(51%) sepia(46%) saturate(519%) hue-rotate(1deg) brightness(97%) contrast(86%);    
+    z-index: 2;
+}
+
