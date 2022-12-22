@@ -98,7 +98,7 @@ function FrontPage() {
       
         <div className="d-block justify-content-center ">
         <h3 className="fst-italic fw-lighter text-center mb-3 text-light">Are getting married in</h3>
-        <h4 className="fst-italic fw-light text-center text-light">December 30, 2022</h4>
+        <h4 className="fst-italic fw-light text-center text-light mb-3">December 30, 2022</h4>
         {/* CountdownHere */}
           <Countdown/>
         </div>
