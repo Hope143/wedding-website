@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../sass/app.scss";
-import bgImage from '/images/flower-bg.mp4'
+import bgImage from '/images/prenup-vid.mp4'
 import { useLocation } from "react-router-dom";
 import Countdown from "./Countdown";
 
