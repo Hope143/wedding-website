@@ -1,0 +1,25 @@
+@use '../abstract/' as *;
+
+.pageContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textHeader {
+    color: $secondary-text-color;
+    z-index: 2;
+}
+
+.dividingPattern {    
+    z-index: 2; 
+    filter: invert(51%) sepia(34%) saturate(421%) hue-rotate(178deg) brightness(85%) contrast(84%);
+}
+
+@media screen and (max-width: 400px) {
+    .dividingPattern {
+        width: 250px !important;
+    }
+}   

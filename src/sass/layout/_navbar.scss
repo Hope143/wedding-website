@@ -38,10 +38,11 @@
   border-bottom: 1px solid $primary;
 }
 
-.navbarContainer .navbar-nav .activeLink {
-  color: $primary !important;
-  border-bottom: 1px solid $primary !important;
+.navbarContainer .navbar-nav .navLink.activeLink {
+  color: black !important;
+  border-bottom: 1px solid black !important;
 }
+
 
 .navbar-brand {
   font-family: 'Pacifico', cursive;
@@ -85,14 +86,14 @@
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {  
 
   .navbar-nav {
     padding: 10px;
     border-radius: 5px;
   }
 
-  .navbarContainer .navbar-nav .activeLink {
+  .navbarContainer .navbar-nav .navLink.activeLink {
     color: black !important;
     border-bottom: 1px solid black !important;
   }
