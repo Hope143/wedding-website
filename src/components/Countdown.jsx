@@ -21,7 +21,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="countdownContainer p-4 position-relative">
+    <div className="countdownContainer p-0 p-sm-4 position-relative">
       <img className="countdownBg d-md-block d-none"  src="/images/countdownDesign.svg" alt="" />
       <img className="countdownBg2 d-md-block d-none"  src="/images/countdownDesign.svg" alt="" />
 <div className="countdownTextContainer">
