@@ -24,7 +24,9 @@ const Countdown = () => {
     <div className="countdownContainer p-4 position-relative">
       <img className="countdownBg d-md-block d-none"  src="/images/countdownDesign.svg" alt="" />
       <img className="countdownBg2 d-md-block d-none"  src="/images/countdownDesign.svg" alt="" />
-      <h1 className='textHeader text-center mb-0'>Countdown</h1>
+<div className="countdownTextContainer">
+<div>
+<h1 className='textHeader text-center mb-0'>Countdown</h1>
       <img className='dividingPattern d-flex mx-auto mb-4' width={300}  src="/images/dividing-pattern-1.png" alt="photo" />
       <h1 className="countdownText text-center">
         <span className="day">{days}d </span>
@@ -32,6 +34,8 @@ const Countdown = () => {
         <span className="minute">{minutes}m </span>
         <span className="second">{seconds}s</span>
       </h1>
+</div>
+</div>
     </div>
   );
 };
