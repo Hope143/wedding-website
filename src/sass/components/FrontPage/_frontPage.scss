@@ -121,6 +121,14 @@ video {
 @media screen and (max-width: 887px) {
 
   .landingFlower2{
+    top:90%;
+    width: 200px;
+  } 
+}
+
+@media screen and (max-width: 887px) and (max-height: 590px) {
+
+  .landingFlower2{
     top:95%;
     width: 200px;
   } 
