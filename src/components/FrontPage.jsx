@@ -72,7 +72,7 @@ function FrontPage() {
               
       
 
-      <div className="titlePage vh-100">
+      <div className="titlePage">
       <img
         className="landingFlower img-fluid"
         src="../../images/landing-flower.png"

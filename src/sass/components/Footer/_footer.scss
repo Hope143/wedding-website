@@ -37,6 +37,16 @@
     opacity:0.5;
 }
 
+.weddingBTS .googleForm {
+    color: $secondary-text-color !important;
+}
+
+.weddingBTS p a {
+    color: red;
+    text-decoration: none;
+    color: $secondary-text-color;
+}
+
 @media screen and (max-width: 1200px) {
     .floralFirst {
         left: 50px;
