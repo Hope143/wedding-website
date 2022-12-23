@@ -15,8 +15,8 @@ const Gallery = () => {
           </div>
           <img className="floral1" src="/images/floral2.svg" alt="" />
           <img className="floral2" src="/images/floral2.svg" alt="" />
-          <img className="floral3" src="/images/floral2.svg" alt="" />
-          <img className="floral4" src="/images/floral2.svg" alt="" />
+          <img className="floral3 d-none d-lg-block" src="/images/floral2.svg" alt="" />
+          <img className="floral4 d-none d-lg-block" src="/images/floral2.svg" alt="" />
         </div>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
   <div className="carousel-indicators">

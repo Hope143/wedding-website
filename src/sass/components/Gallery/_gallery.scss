@@ -14,12 +14,14 @@
 
 .floral1 {
     position: absolute;
+    z-index: 0;
     top: 0;
     right: 0;
 }
 
 .floral2 {
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
     transform: scaleX(-1);
@@ -28,6 +30,7 @@
 
 .floral3 {
     position: absolute;
+    z-index: 0;
     bottom: -20px;
     left: 0;
     transform: rotate(180deg);
@@ -36,7 +39,26 @@
 
 .floral4 {
     position: absolute;
+    z-index: 0;
     bottom: -20px;
     right: 0;
     transform: scaleY(-1);
+}
+
+@media screen and (max-width: 992px) {
+    .floral1 {
+        width: 200px;
+    }
+    .floral2 {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 553px) {
+    .floral1 {
+        width: 150px;
+    }
+    .floral2 {
+        width: 150px;
+    }
 }

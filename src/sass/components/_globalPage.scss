@@ -11,12 +11,12 @@
 
 .textHeader {
     color: $secondary-text-color;
-    z-index: 2;
+    z-index: 3 !important;
     font-size: 50px;
 }
 
 .dividingPattern {    
-    z-index: 2; 
+    z-index: 3 !important; 
     filter: invert(51%) sepia(34%) saturate(421%) hue-rotate(178deg) brightness(85%) contrast(84%);
 }
 
