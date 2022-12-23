@@ -51,8 +51,11 @@ video {
 }
 
 .titleHeader {
-  font-size: 100px;
+  font-size: 90px;
   color: $primary;
+  font-family: 'Lobster', cursive;
+
+
 }
 .andHeader {
   font-size: 70px;
@@ -96,6 +99,19 @@ video {
   color: rgb(245, 193, 193);
 }
 
+.bxl-facebook-circle {
+  color: #4267B2;
+}
+
+.bxl-instagram-alt {
+  overflow: hidden;
+  background: #f09433; 
+  border-radius: 5px;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+}
 @media screen and (max-width: 992px) {
 
 .landingFlower {
@@ -132,6 +148,15 @@ video {
     top:95%;
     width: 200px;
   } 
+}
+
+@media screen and (max-width: 449px) {
+
+  .textCountdown {
+    font-size: 25px;
+    color: $text-color;
+    border-radius: 10px;
+  }
 }
 
 

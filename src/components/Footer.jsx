@@ -19,13 +19,13 @@ function Footer() {
                     <span className='d-block'>EM</span>    
                 </p>
                 <img className='floralSecond' width={90} src="/images/floral1.svg" alt="floral" />
-            </div>
+            </div>  
             <div className='weddingBTS col-12 col-md-4 d-block d--md-flex justify-content-end fw-semibold text-center text-md-end'>
                 <a className='mb-0 googleForm' href='https://docs.google.com/forms/d/e/1FAIpQLScgYdhKFGMcKKXOHdvyEw2BoQB_48h0pvGipqyvPNmSiUYx4Q/viewform' target="_blank" >Reserve Your Sit Here!</a>
                 <p>
-                    <a href='https://instagram.com/jaellaura?igshid=YmMyMTA2M2Y=' target="_blank"  className='d-block'>Art Visual by: @jaellaura - Instagram</a>
-                    <a href='https://www.facebook.com/luntianstudios?mibextid=LQQJ4d' target="_blank"  className='d-block'>Videos: Trick Shot Films - Facebook</a>
-                    <a href='https://www.facebook.com/trickshotfilms00/?mibextid=LQQJ4d' target="_blank"  className='d-block'>Photos: Luntian Studios - Facebook</a>
+                    <a href='https://instagram.com/jaellaura?igshid=YmMyMTA2M2Y=' target="_blank"  className='d-block'>Art Visual by: @jaellaura <i className='bx bxl-instagram-alt mb-0 fs-5' ></i></a>
+                    <a href='https://www.facebook.com/luntianstudios?mibextid=LQQJ4d' target="_blank"  className='d-block'>Videos: Trick Shot Films <i className='bx bxl-facebook-circle fs-5'></i></a>
+                    <a href='https://www.facebook.com/trickshotfilms00/?mibextid=LQQJ4d' target="_blank"  className='d-block'>Photos: Luntian Studios <i className='bx bxl-facebook-circle fs-5'></i></a>
                 </p>
             </div>
         </div>
