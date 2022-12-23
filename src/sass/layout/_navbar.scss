@@ -93,6 +93,10 @@
     border-radius: 5px;
   }
 
+  .navbar-nav.navbarNavScrolled {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  }
+
   .navbarContainer .navbar-nav .navLink.activeLink {
     color: black !important;
     border-bottom: 1px solid black !important;

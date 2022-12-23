@@ -3,7 +3,7 @@ import locationBG from '../../public/images/location-bg.png'
 
 function Location() {
   return (
-    <div className='locationContainer p-5'>
+    <div className='locationContainer p-5' id='location'>
         <div className="pageContainer">
           <div className='locationHeaderContainer'>
             <h1 className='locationTextHeader  text-center mb-0'>Location</h1>

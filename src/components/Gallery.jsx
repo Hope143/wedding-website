@@ -1,11 +1,11 @@
 
 import React, { useEffect, useState } from "react";
-import prenupimg from '../../public/prenupImg/picture1.jpg'
 
 const Gallery = () => {
 
   return (
-    <div className="countdownContainer p-5 position-relative">
+    <div className="position-relative countdownParent">
+      <div className="countdownContainer px-2 p-5" id="gallery">
         {/* <img className="countdownBg d-md-block d-none"  src="/images/countdownDesign.svg" alt="" />
         <img className="countdownBg2 d-md-block d-none"  src="/images/countdownDesign.svg" alt="" /> */}
         <div className="countdownTextContainer">
@@ -13,6 +13,10 @@ const Gallery = () => {
             <h1 className='textHeader text-center mb-0'>Gallery</h1>
             <img className='dividingPattern d-flex mx-auto mb-5 mb-sm-4' width={300}  src="/images/dividing-pattern-1.png" alt="photo" />
           </div>
+          <img className="floral1" src="/images/floral2.svg" alt="" />
+          <img className="floral2" src="/images/floral2.svg" alt="" />
+          <img className="floral3" src="/images/floral2.svg" alt="" />
+          <img className="floral4" src="/images/floral2.svg" alt="" />
         </div>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
   <div className="carousel-indicators">
@@ -24,13 +28,13 @@ const Gallery = () => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="../prenupImg/picture1.jpg" className="d-block w-100" alt="..."/>
+      <img src="../prenupImg/picture3.jpg" className="picture1 d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
       <img src="../prenupImg/picture2.jpg" className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="../prenupImg/picture3.jpg" className="d-block w-100" alt="..."/>
+      <img src="../prenupImg/picture1.jpg" className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
       <img src="../prenupImg/picture4.jpg" className="d-block w-100" alt="..."/>
@@ -48,6 +52,7 @@ const Gallery = () => {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
+    </div>
     </div>
   );
 };

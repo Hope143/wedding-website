@@ -55,12 +55,9 @@ function FrontPage() {
             className="collapse navbar-collapse d-lg-flex justify-content-end"
             id="navbarNavAltMarkup"
           >
-            <div className="navbar-nav">
+            <div className={`navbar-nav ${navbar ? '' : 'navbarNavScrolled'}`}>
               <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '' ? 'activeLink' : ''}`} href="#">
                 HOME
-              </a>
-              <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '#countdown' ? 'activeLink' : ''}`} fs-6 href="#countdown">
-                COUNTDOWN
               </a>
               <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '#gallery' ? 'activeLink' : ''}`} href="#gallery">
                 GALLERY

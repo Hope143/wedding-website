@@ -1,14 +1,42 @@
+@use '../../abstract/' as *;
+
 // .carousel-control-prev { 
 //     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) !important;
-//     max-width: 150px;
-// }
-
+//
+.countdownParent {
+    background-color: $secondary;
+}
 .countdownContainer {
     width: 100%;
     max-width: 1000px;
     margin: auto;
 }
 
-.picture1 {
-height: 1536px !important;
+.floral1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.floral2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+
+.floral3 {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+
+.floral4 {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    transform: scaleY(-1);
 }
