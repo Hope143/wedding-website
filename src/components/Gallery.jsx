@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 const Gallery = () => {
 
   return (
-    <div className="position-relative countdownParent">
+    <div className="position-relative countdownParent overflow-hidden">
       <div className="countdownContainer px-2 p-5" id="gallery">
         {/* <img className="countdownBg d-md-block d-none"  src="/images/countdownDesign.svg" alt="" />
         <img className="countdownBg2 d-md-block d-none"  src="/images/countdownDesign.svg" alt="" /> */}

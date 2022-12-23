@@ -50,6 +50,11 @@
   color: $text-color;
 }
 
+.navbar-brand:focus,
+.navbar-brand:active,
+.navbar-brand:hover {
+  color: $text-color;
+}
 
 .navbarContainer a.scrolledNavBrand {
   font-family: 'Pacifico', cursive;
@@ -60,6 +65,7 @@
   color: $text-color;
   font-weight: 500;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {

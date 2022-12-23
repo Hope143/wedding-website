@@ -1,0 +1,79 @@
+@use '../../abstract/' as *;
+
+.footerContainer {
+    background-color: $bg-color !important;
+    color: $secondary-text-color;
+}
+
+.footerHeader {
+    color: $secondary-text-color;
+}
+
+.coupleName {
+    font-size: 30px;
+}
+
+.floralFirst {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    opacity: 0.5;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(230deg);
+}
+
+.floralSecond {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg);
+    opacity:0.5;
+}
+
+@media screen and (max-width: 1200px) {
+    .floralFirst {
+        left: 50px;
+    }
+
+    .floralSecond {
+        right: 50px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .floralFirst {
+        left: 0px;
+    }
+
+    .floralSecond {
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .coupleName {
+        font-size: 25px;
+    }
+    .floralFirst {
+        position: static;
+        width: 70px !important;
+    }
+
+    .floralSecond {
+        position: static;
+        width: 70px !important; 
+        }
+    .footerHeader {
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+}
