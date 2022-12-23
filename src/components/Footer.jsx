@@ -5,7 +5,7 @@ function Footer() {
     <div className='footerContainer p-4 w-100'>
         <div className="container">
         <div className='row justify-content-between'>
-            <div className="location col-12 col-md-4 d-block text-center text-md-start fw-semibold">
+            {/* <div className="location col-12 col-md-4 d-block text-center text-md-start fw-semibold">
                 <span className='d-block'>Friday, December 30, 2022 at</span>
                 <span className='d-block'>2:00 pm</span>
                 <span className="d-block">La Faithe Home and Country Garden</span>
@@ -19,7 +19,7 @@ function Footer() {
                     <span className='d-block'>EM</span>    
                 </p>
                 <img className='floralSecond' width={90} src="/images/floral1.svg" alt="floral" />
-            </div>  
+            </div>   */}
             <div className='weddingBTS col-12 col-md-4 d-block d--md-flex justify-content-end fw-semibold text-center text-md-end'>
                 <a className='mb-0 googleForm' href='https://docs.google.com/forms/d/e/1FAIpQLScgYdhKFGMcKKXOHdvyEw2BoQB_48h0pvGipqyvPNmSiUYx4Q/viewform' target="_blank" >Reserve Your Sit Here!</a>
                 <p>
