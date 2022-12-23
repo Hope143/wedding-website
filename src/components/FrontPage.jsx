@@ -59,11 +59,11 @@ function FrontPage() {
               <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '' ? 'activeLink' : ''}`} href="#">
                 HOME
               </a>
-              <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '#gallery' ? 'activeLink' : ''}`} href="#gallery">
-                GALLERY
-              </a>
               <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '#location' ? 'activeLink' : ''}`} href="#location">
                 LOCATION
+              </a>
+              <a className={`${navbar ? 'navLink' : ''} nav-link fs-6 ${currentLocation === '#gallery' ? 'activeLink' : ''}`} href="#gallery">
+                GALLERY
               </a>
             </div>
           </div>
