@@ -6,11 +6,11 @@ import { Fragment } from 'react';
 
 function MainHandler() {
   return (
-    <Fragment>
+    <main>
       <FrontPage />
       <Location/>
       <Gallery />
-    </Fragment>
+    </main>
   )
 }
 

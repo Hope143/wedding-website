@@ -9,7 +9,6 @@ function FrontPage() {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    console.log(window.scrollY)
     if (window.scrollY >= 66) {
       setNavbar(true)
     } else {
@@ -24,7 +23,6 @@ function FrontPage() {
   })
 
   const currentLocation = useLocation().hash;
-  console.log( currentLocation == '#countdown');
 
   return (
     <div className="frontPage position-relative">
