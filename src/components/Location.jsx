@@ -1,13 +1,12 @@
 import React from 'react'
-import locationBG from '../../public/images/location-bg.png'
 
 function Location() {
   return (
     <div className='locationContainer p-5' id='location'>
         <div className="pageContainer">
           <div className='locationHeaderContainer'>
-            <h1 className='locationTextHeader  text-center mb-0'>Location</h1>
-            <img className='   d-flex mx-auto mb-5 mb-sm-4' width={300}  src="/images/dividing-pattern-1.png" alt="photo" />
+            <h1 className='locationTextHeader text-center mb-0'>Location</h1>
+            <img className='LocationDividingPattern d-flex mx-auto mb-5 mb-sm-4' width={300}  src="/images/dividing-pattern-1.png" alt="photo" />
           </div>
         </div>
         <div className='d-flex justify-content-center w-100'>
