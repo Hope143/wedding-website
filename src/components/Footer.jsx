@@ -20,7 +20,7 @@ function Footer() {
                 </p>
                 <img className='floralSecond' width={90} src="/images/floral1.svg" alt="floral" />
             </div>   */}
-            <div className='weddingBTS col-12 col-md-4 d-block d--md-flex justify-content-end fw-semibold text-center text-md-end'>
+            <div className='weddingBTS col-12 d-block d--md-flex justify-content-end fw-semibold text-center'>
                 <a className='mb-0 googleForm' href='https://docs.google.com/forms/d/e/1FAIpQLScgYdhKFGMcKKXOHdvyEw2BoQB_48h0pvGipqyvPNmSiUYx4Q/viewform' target="_blank" >Reserve Your Sit Here!</a>
                 <p>
                     <a href='https://instagram.com/jaellaura?igshid=YmMyMTA2M2Y=' target="_blank"  className='d-block'>Art Visual by: @jaellaura <i className='bx bxl-instagram-alt mb-0 fs-5' ></i></a>
