@@ -78,16 +78,12 @@ function FrontPage() {
         src="../../images/landing-flower.png"
         alt="flower"
       />
-      <img
-        className="landingFlower2 img-fluid"
-        src="../../images/motif2.png"
-        alt="flower"
-      />
-        <div className="text-Container">
-        <h1 className="titleHeader mb-3 d-lg-flex align-items-end d-none">
+      
+        <div className="text-Container position-relative">
+        <h1 className="titleHeader m-0 d-lg-flex align-items-end d-none">
           Imman <span className="andHeader px-4">&</span> Em
         </h1>
-        <h1 className="titleHeader mb-3 d-flex text-center d-lg-none align-items-end">
+        <h1 className="titleHeader m-0 d-flex text-center d-lg-none align-items-end">
         Imman & Em
         </h1>
       
@@ -97,6 +93,11 @@ function FrontPage() {
         {/* CountdownHere */}
           <Countdown/>
         </div>
+        <img
+        className="landingFlower2 img-fluid"
+        src="../../images/motif2.png"
+        alt="flower"
+      />
         </div>
       </div>
     </div>
