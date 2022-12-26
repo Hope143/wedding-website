@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Fragment } from "react";
 
-const targetTime = new Date("2022-12-30, 2:00 PM").getTime();
+const targetTime = new Date("2022-12-30").getTime();
 
 const Countdown = () => {
   const [currentTime, setCurrentTime] = useState(Date.now());
