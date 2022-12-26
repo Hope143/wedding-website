@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Fragment } from "react";
 
-const targetTime = new Date("2022-12-30, 2:00 PM").getTime();
+const targetTime = new Date("2022-12-26, 11:32 PM").getTime();
 
 const Countdown = () => {
   const [currentTime, setCurrentTime] = useState(Date.now());
@@ -22,7 +22,7 @@ const Countdown = () => {
   }, []);
 
   const CountdownHandler = () => {
-    if(seconds === 0 || seconds < 0 && days === 0 || days < 0 && minutes === 0 || minutes < 0 && hours ===0 || hours < 0) {
+    if(seconds <= 0 && days <= 0 && minutes <= 0 && hours <=0) {
       return (
         <p className="textCountdown fw-semibold text-center">
         <span className="minute">Happening Now!</span>
